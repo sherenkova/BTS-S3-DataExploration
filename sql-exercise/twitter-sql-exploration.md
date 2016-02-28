@@ -16,8 +16,8 @@ In[63]: sum(df.groupby('tweet_id')['urls'].apply(lambda g: len(g)>1))
 Out[63]: 706
 
 How many tweets are geotagged (have latitude and longitude)?:
-In[68]: sum(df.geo.apply(lambda g: g != 'None'))
-Out[68]: 15572
+In[89]: len(df[(df.geo != 'None')].groupby('tweet_id').tweet_id)
+Out[89]: 15564
 
 How many tweets are original (e.g., not retweets)?:
 
