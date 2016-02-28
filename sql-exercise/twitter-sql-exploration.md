@@ -20,7 +20,8 @@ In[89]: len(df[(df.geo != 'None')].groupby('tweet_id').tweet_id)
 Out[89]: 15564
 
 How many tweets are original (e.g., not retweets)?:
-
+In[90]: len(df[(df.retweeted == False)].groupby('tweet_id').tweet_id)
+Out[90]: 2128793
 
 How many tweets for each day? In average?:
 
