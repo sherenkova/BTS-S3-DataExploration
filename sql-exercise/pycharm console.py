@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 data_path = 'E:\\Trash\data\\df-data_twitter_vine\\twitter-vine-clean.tsv.bz2'
+df = pd.read_csv(data_path, sep='\t', compression='bz2')
 len(df.index)
 list(df.columns.values)
 df
