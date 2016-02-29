@@ -1,7 +1,10 @@
 ----------
 In[2]: import pandas as pd
+
 In[3]: import numpy as np
+
 In[4]: data_path = 'E:\\Trash\data\\df-data_twitter_vine\\twitter-vine-clean.tsv.bz2'
+
 In[5]: df = pd.read_csv(data_path, sep='\t', compression='bz2')
 
 ----------
